@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #388E3C;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* Main container */
+main {
+    padding: 20px;
+}
+
+/* Bucket list section */
+.bucket-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section titles */
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #388E3C;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+li i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+/* Item actions (checkboxes) */
+.item-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.complete-icon,
+.complete-icon-filled {
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.complete-icon {
+    color: #ddd;
+}
+
+.complete-icon-filled {
+    display: none;
+    color: #4CAF50;
+}
+
+input[type="checkbox"]:checked + .complete-icon {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .complete-icon + .complete-icon-filled {
+    display: inline-block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header .subtitle {
+        font-size: 1em;
+    }
+    li {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <link rel="stylesheet"https://raw.githubusercontent.com/gnanagnanendra07/Personal-Bucket-List/refs/heads/main/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-list-check"></i> Personal Bucket List</h1>
+        <p class="subtitle">Goals to achieve, dreams to fulfill!</p>
+    </header>
+
+    <main>
+        <section class="bucket-list">
+            <div class="list-container">
+                <h2>Adventure & Travel</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Go on a Safari in Africa
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Road trip across the USA
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Visit the Great Wall of China
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                </ul>
+
+                <h2>Health & Wellness</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Run a Full Marathon
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Master Yoga
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Meditate for 30 Days Straight
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                </ul>
+
+                <h2>Personal Achievements</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Write a Memoir
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Learn to Dance Salsa
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
+                        Become Fluent in French
+                        <label class="item-actions">
+                            <input type="checkbox" class="toggle-complete">
+                            <i class="far fa-circle complete-icon"></i>
+                            <i class="fas fa-circle-check complete-icon-filled"></i>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> Created by THATHI REDDY GNANENDRA REDDY | 2025 </p>
+    </footer>
+
+</body>
+
+</html>
